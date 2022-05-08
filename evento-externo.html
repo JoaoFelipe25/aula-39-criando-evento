@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="paragrafo">Clique aqui</h1>
+
+    <h1 onclick="alert('clicou'); this.innerHTML = 'clicado foi 2'">Clique aqui 2</h1>
+    
+</body>
+
+    <script>
+        //adicionando event listener ao elemento HTML
+        var paragrafo = document.getElementById("paragrafo").addEventListener("click",
+        function(){
+            alert("Ola Mundo")
+            document.getElementById("paragrafo").innerHTML = "clicado foi"
+        } )
+    </script>
+
+</html>
